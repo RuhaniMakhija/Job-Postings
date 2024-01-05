@@ -6,7 +6,7 @@ const Filters = ({ onFiltersChange }) => {
     const [selectedFilters, setSelectedFilters] = useState({});
    
     const getFilterData=async()=>{
-        const data= await fetch("http://demo0893509.mockable.io/filter-data")
+        const data= await fetch("https://demo0893509.mockable.io/filter-data")
         const json=await data.json();
         setFilterData(json);
     }
@@ -44,7 +44,7 @@ const Filters = ({ onFiltersChange }) => {
 
     
   return (
-    <div className='bg-[#171C28] text-white  ml-32 mt-20 rounded-xl drop-shadow-lg w-[30%]'>
+    <div className='bg-[#171C28] text-white  ml-32 mt-20 rounded-xl drop-shadow-lg w-[25%]'>
       <div className='flex items-center p-4'>
         <h1 className='mr-12'>Filter by </h1>
         <p className='mr-3 text-sm'>{Object.values(selectedFilters).flat().length} filters applied.</p>
