@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Filters from './Filters'
 import Results from './Results'
 
-const Body = () => {
+const Body = ({ searchTerm }) => {
+  const [selectedFilters, setSelectedFilters] = useState({});
+
+  // Function to handle filter changes
+  const handleFiltersChange = (filters) => {
+    setSelectedFilters(filters);
+  };
+  
   return (
     <div className='flex bg-[#171C28] bg-opacity-98'>
-      <Filters/>
-      <Results/>
+      <Filters onFiltersChange={setSelectedFilters}/>
+      <Results searchTerm={searchTerm} selectedFilters={selectedFilters}/>
     </div>
   )
 }
