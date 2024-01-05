@@ -8,17 +8,14 @@ const ResultCard = ({jobData}) => {
   const {
     company_name,
     images,
-    education_required,
-    experience_required,
+    
     no_of_applicants,
     posting_city,
     posting_state,
     posting_time,
-    salary,
-    skills_percentage_AI,
-    skills_percentage_JQuery,
+   
     skills_percentage_JS,
-    skills_percentage_ML,
+  
     job_title
   } = jobData;
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import Filters from './Filters'
 import Results from './Results'
 
@@ -6,9 +6,9 @@ const Body = ({ searchTerm }) => {
   const [selectedFilters, setSelectedFilters] = useState({});
 
   // Function to handle filter changes
-  const handleFiltersChange = (filters) => {
-    setSelectedFilters(filters);
-  };
+  // const handleFiltersChange = (filters) => {
+  //   setSelectedFilters(filters);
+  // };
   
   return (
     <div className='flex bg-[#171C28] bg-opacity-98'>
