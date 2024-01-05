@@ -150,7 +150,7 @@ const Results = ({ searchTerm,selectedFilters }) => {
     });
 
     setResults(filteredResults);
-    console.log("results",results);
+    
   }
 
   //deboucing
