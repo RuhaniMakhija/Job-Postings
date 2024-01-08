@@ -44,7 +44,7 @@ const Filters = ({ onFiltersChange }) => {
 
     
   return (
-    <div className='bg-[#171C28] text-white  ml-32 mt-20 rounded-xl drop-shadow-lg w-[25%]'>
+    <div className='bg-[#171C28] text-white  ml-32 mt-20 rounded-xl drop-shadow-lg w-[30%]'>
       <div className='flex items-center p-4'>
         <h1 className='mr-12'>Filter by </h1>
         <p className='mr-3 text-sm'>{Object.values(selectedFilters).flat().length} filters applied.</p>
